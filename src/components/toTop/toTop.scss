@@ -1,0 +1,17 @@
+@import '../../global.scss';
+
+.to-top{
+    color: $mainColour;
+    width: 5%;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    text-align: center;
+    
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
