@@ -1,3 +1,119 @@
-.projects{
+@import "../../global.scss";
+
+.projects {
     background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    ul {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        text-align: center;
+    }
+
+    .container {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .item {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            flex-direction: column;
+            transition: all 0.5s ease;
+            border: 1px solid lightgray;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
+            }
+
+            &:hover {
+                background-color: $mainColour;
+
+                img {
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+
+                .left {
+                    opacity: 1;
+                }
+
+                .right {
+                    opacity: 1;
+                }
+            }
+
+            h3 {
+                position: absolute;
+                font-size: 20px;
+            }
+
+            a {
+                position: absolute;
+                font-size: 15px;
+                text-decoration: none;
+                color: white;
+                bottom: 10%;
+                margin: 20px;
+            }
+
+            .left {
+                left: 10%;
+                opacity: 0;
+            }
+
+            .right {
+                right: 10%;
+                opacity: 0;
+            }
+
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        span {
+            animation: arrowBlink 2s infinite;
+        }
+
+        @keyframes arrowBlink {
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
 }

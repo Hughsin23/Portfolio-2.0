@@ -1,12 +1,11 @@
-import { useState } from 'react';
-import './app.scss';
-import Navbar from './components/navbar/Navbar';
-import About from './components/about/About';
-import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact'
-import ToTop from './components/toTop/ToTop';
-import Menu from './components/menu/Menu';
+import { useState } from 'react'
+import './app.scss'
+import Navbar from './components/navbar/Navbar'
+import About from './components/about/About'
+import Projects from './components/projects/Projects'
+import Menu from './components/menu/Menu'
 import Skills from './components/skills/Skills'
+import ToTop from './components/toTop/ToTop'
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -19,11 +18,10 @@ function App() {
         <About />
         <Projects />
         <Skills />
-        <Contact />
       </div>
       <ToTop />
     </div>
   );
 }
 
-export default App;
+export default App

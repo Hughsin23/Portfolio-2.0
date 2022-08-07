@@ -17,7 +17,9 @@
     height: 100%;
 
     .left {
-
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
       .icon {
         margin-right: 30px;
         text-decoration: none;
@@ -26,7 +28,7 @@
     }
 
     .right {
-
+      margin-left: 200px;
       .hamburger {
         width: 32px;
         height: 25px;
