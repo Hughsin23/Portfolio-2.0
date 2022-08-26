@@ -11,7 +11,7 @@ export default function About() {
     <div className='about' id='about'>
       <div className="left">
         <div className="image-container">
-          <img src="assets/hughmono.jpeg" alt="A pic of Hugh" />
+          <img src="assets/hughphoto.jpeg" alt="A pic of Hugh" />
         </div>
       </div>
       <section className="right">

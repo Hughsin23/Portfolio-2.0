@@ -19,10 +19,7 @@ export default function Menu({openMenu, setOpenMenu}) {
                     <a href="#skills">Skills</a>
                 </li>
                 <li onClick={handleClick}>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li onClick={handleClick}>
-                    <a href="./resume.pdf" target="_blank">Resume</a>
+                    <a href="/assets/resume.pdf" target="_blank">Resume</a>
                 </li>
             </ul>
         </div>

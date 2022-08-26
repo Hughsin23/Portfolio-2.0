@@ -53,7 +53,7 @@ export default function Projects() {
         </div>
       </div>
       <footer className="footer">
-        <h3><a href="#projects">See my skills <br></br><span><Icon icon="akar-icons:chevron-down" color="black" width="36" height="36" /></span></a></h3>
+        <h3><a href="#skills">See my skills <br></br><span><Icon icon="akar-icons:chevron-down" color="black" width="36" height="36" /></span></a></h3>
       </footer>
     </div>
   )
